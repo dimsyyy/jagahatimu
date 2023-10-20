@@ -1,0 +1,59 @@
+body {
+    background: url(img/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.teks{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+
+}
+.teks.show {
+    opacity: 1;
+}
+.teks p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+.btn {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 998;
+}
+.btn button{
+    border: none;
+    border-radius: 5px;
+    padding: 4px 9px;
+    font-size: small;
+    font-family: 'Open sans', sans-serif;
+    box-shadow: 0 0 9px black;
+}
+.btn-wa {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 9px;
+    font-size: small;
+    font-family: 'Open sans', sans-serif;
+    box-shadow: 0 0 9px black;
+    background-color: white;
+    display: none;
+    
+}
+.btn-wa.show {
+    display: block;
+}
